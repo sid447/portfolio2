@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+<suite name="Failed suite [Suite]">
   <listeners>
     <listener class-name="Academy.Listeners"/>
   </listeners>
-  <test thread-count="5" name="Validating title in the Page(failed)">
+  <test name="Validating title in the Page(failed)">
     <classes>
+      <class name="Academy.validateNavigationBar">
+        <methods>
+          <include name="initialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Academy.validateNavigationBar -->
+      <class name="Academy.VerifySignup">
+        <methods>
+          <include name="teardown"/>
+          <include name="Initialize"/>
+        </methods>
+      </class> <!-- Academy.VerifySignup -->
+      <class name="Academy.Practice">
+        <methods>
+          <include name="Initialize"/>
+        </methods>
+      </class> <!-- Academy.Practice -->
       <class name="Academy.validateTitle">
         <methods>
           <include name="validateAppTitle"/>
@@ -13,6 +30,12 @@
           <include name="teardown"/>
         </methods>
       </class> <!-- Academy.validateTitle -->
+      <class name="Academy.HomePage">
+        <methods>
+          <include name="initialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Academy.HomePage -->
     </classes>
   </test> <!-- Validating title in the Page(failed) -->
 </suite> <!-- Failed suite [Suite] -->

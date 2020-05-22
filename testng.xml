@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="Suite" parallel="Tests">
 <listeners>
 <listener class-name="Academy.Listeners"/>
 </listeners>
@@ -24,6 +24,16 @@
             <test name="Validating navigation Bar">
          <classes>
       <class name="Academy.validateNavigationBar"/>
+   </classes>
+      </test>
+            <test name="Validating Sign up">
+         <classes>
+      <class name="Academy.VerifySignup"/>
+   </classes>
+      </test>
+            <test name="Validating LogOUt">
+         <classes>
+      <class name="Academy.Practice"/>
    </classes>
       </test>
    <!-- Test -->

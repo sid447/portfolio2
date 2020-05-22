@@ -1,0 +1,15 @@
+TestCase1:
+Verify that a newly registered user can login with correct credentials.
+
+TestSteps:
+1)Open home page
+2)Click on register button
+3)Fill out FullName, Email, password, confirm password information.
+4)Click on the checkboxes
+5)Click on signup button.
+6)Verify that you are logged in as registered user.
+7)Sign out of the application.
+8)Click on signin button.
+9)Sign in with previously created credentials.
+10)Verify that you are able to sign in.
+
